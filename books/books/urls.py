@@ -29,6 +29,7 @@ router.register(r'book', BookViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     # url('', include('social_django.urls', namespace='social')),
+    # ИЗ-ЗА РАЗНИЦЫ В ВЕРСИЯХ С ПОМИДОРОМ, ЭТОТ URL НЕ СРАБАТЫВАЕТ. ВМЕСТО НЕГО - СТРОКА НИЖЕ
     re_path('', include('social_django.urls', namespace='social')),
     path('auth/', auth),
 
